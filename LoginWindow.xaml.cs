@@ -11,17 +11,37 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
-namespace ProductManagementDemo
+using BusinessObjects;
+using Services;
+using WpfApp1;
+namespace WpfApp1
 {
     /// <summary>
     /// Interaction logic for LoginWindow.xaml
     /// </summary>
     public partial class LoginWindow : Window
     {
+        private readonly IAccountService _accountService;
         public LoginWindow()
         {
             InitializeComponent();
+            _accountService = new AccountService();  
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            AccountMember account = _accountService.GetAccountById(txtUser.Text);
+            if(account != null && account.MemberPassword.Equals(txtPass.Password) && account.MemberRole==1)
+            {
+                this.Hide();
+                MainWindow mainWindow = new MainWindow();   
+                mainWindow.Show();
+            }
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

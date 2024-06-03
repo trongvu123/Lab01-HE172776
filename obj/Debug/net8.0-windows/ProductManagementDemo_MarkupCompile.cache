@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\dotnet2\ProductManagementDemo\App.xaml
-11407045341
+2-216653475
 
-51456181015
-238661144186
-MainWindow.xaml;
+6844875024
+4201724821630
+LoginWindow.xaml;MainWindow.xaml;
 
-True
+False
 
