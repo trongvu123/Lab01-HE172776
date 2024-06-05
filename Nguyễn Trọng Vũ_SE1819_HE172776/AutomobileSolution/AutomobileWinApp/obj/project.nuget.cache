@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "87gNxUkP+TZ8MqM0zxZhiHc2kMBjrO+A4JsRu5EJOa3KNnqOdmE2TlfITOmPzgEFSo08OBwfYQQzHUYVVQ7XrA==",
+  "success": false,
+  "projectFilePath": "D:\\Ky_5\\PRN_FPT\\Lap1\\lap1_nguyenmanhhung_he172300\\AutomobileSolution\\AutomobileWinApp\\AutomobileWinApp.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\Ky_5\\PRN_FPT\\Lap1\\lap1_nguyenmanhhung_he172300\\AutomobileSolution\\AutomobileLibrary\\AutomobileLibrary.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\Ky_5\\PRN_FPT\\Lap1\\lap1_nguyenmanhhung_he172300\\AutomobileSolution\\AutomobileLibrary\\AutomobileLibrary.csproj",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}
